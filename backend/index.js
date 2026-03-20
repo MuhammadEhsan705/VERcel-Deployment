@@ -22,7 +22,7 @@ connectCloudinary()
 app.use(express.json());
 app.use(
     cors({
-      origin: "http://localhost:5173",
+      origin: "https://vercel-deployment-fronted.vercel.app",
       credentials: true,
     })
   );
@@ -40,6 +40,7 @@ app.use("/api/cart",cartRoute)
 app.use("/api/order",orderRoutes)
 app.use("/api/booking",bookingRoutes)
 
-app.listen(PORT,()=>{
-    console.log(`server is running on port ${PORT}`)
-})
+// app.listen(PORT,()=>{
+//     console.log(`server is running on port ${PORT}`)
+// })
+export default app;
