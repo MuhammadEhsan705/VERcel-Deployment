@@ -6,7 +6,7 @@ const authRoutes=express.Router();
 
 authRoutes.post("/register",registerUser)
 authRoutes.post("/login",loginuser)
-authRoutes.post("/admin/login",adminLogin)
+authRoutes.post("/admin/me",adminLogin)
 authRoutes.post("/logout",logoutUser)
 authRoutes.get("/profile",protect,getProfile)
 authRoutes.get("/is-auth",protect,isAuth);
