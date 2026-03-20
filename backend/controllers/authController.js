@@ -146,4 +146,13 @@ export const isAuth=async(req,res)=>{
 
 
 
-
+export const adminMe = async (req, res) => {
+    try {
+        return res.json({
+            success: true,
+            admin: req.admin
+        });
+    } catch (error) {
+        return res.json({ success: false });
+    }
+};
