@@ -25,7 +25,7 @@ export const addToCart=async(req,res)=>{
         res.status(200).json({message:"Item added to cart",success:true, cart});
     } catch (error) {
         console.log(error)
-        return res.json({message:"Internal server error",success:false})
+        return res.json({message:"Login or Register",success:false})
         
         
     }
